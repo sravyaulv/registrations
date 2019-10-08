@@ -1,0 +1,23 @@
+<html>
+<head>
+<h1 align="center">Registered Users</h1>
+</head>
+
+<body>
+    <table align="center" border="1" width="500">
+    <tr>
+        <td>Age</td>
+        <td>Name</td>
+        <td>DOB</td>
+    </tr>
+    {% for record in data %}
+    <tr>
+        {% for item in record %}
+            <td>{{ item }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    </table>
+
+</body>
+</html>
